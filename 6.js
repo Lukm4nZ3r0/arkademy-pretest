@@ -5,15 +5,15 @@ function binaryConverter(desimal=12){
         if(desimal!==0){
             if(desimal%2!==0){
                 desimal = Math.floor(desimal/2)
-                hasil.push(0)
+                hasil.push(1)
             }
             else{
                 desimal = Math.floor(desimal/2)
-                hasil.push(1)
+                hasil.push(0)
             }
         }
     }
 
-    return hasil
+    return hasil.reverse()
 }
 console.log(binaryConverter())
